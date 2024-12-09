@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a0e723a-1cdd-4919-8e8b-fe1afc39f1b6" name="Changes" comment="Update Bot">
-      <change afterPath="$PROJECT_DIR$/u_13_3_bot_second.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u_13_4_bot_s_mashinoy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/u_13_2_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/u_13_2_bot.py" afterDir="false" />
     </list>
@@ -24,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "IlyaMuza"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IlyaMuza&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/IlyaMuza/unit_13_2_bot_first.git",
-    "accountId": "4789eb74-94bd-4d82-b5f3-fc8d30037914"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/IlyaMuza/unit_13_2_bot_first.git&quot;,
+    &quot;accountId&quot;: &quot;4789eb74-94bd-4d82-b5f3-fc8d30037914&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pvc35vTzkG3dC9DWYVYrWEyuZl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,6 +49,7 @@
   "keyToString": {
     "Python.u_13_2_bot.executor": "Run",
     "Python.u_13_3_bot_second.executor": "Run",
+    "Python.u_13_4_bot_s_mashinoy.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -77,7 +78,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733651071143</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update Bot">
+      <option name="closed" value="true" />
+      <created>1733653458948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733653458948</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update Bot">
+      <option name="closed" value="true" />
+      <created>1733653475050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733653475050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

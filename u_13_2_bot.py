@@ -16,7 +16,7 @@ async def start(message):
 @dp.message_handler()
 async def start(message):
     print('Пришло:', message.text)
-    await message.answer(f'Все говорят "{message.text}" А ты купи слона!')
+    await message.answer(f'Все говорят "{message.text}"3уч А ты купи слона!')
 
 
 if __name__ == '__main__':
