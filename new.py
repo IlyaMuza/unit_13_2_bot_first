@@ -24,7 +24,7 @@ async def main_menu(message):
     await message.answer('Выберите опцию:', reply_markup = kb_inline)
     print('dzfgdfh')
 
-@dp.callback_query_handler(lambda call: сall.data.startswith("formulas"))
+@dp.callback_query_handler(text='formulas')
 async def get_formulas(call):
     print('call')
     await call.message.answer('10 х вес (кг) + 6,25 x рост (см) – 5 х возраст (г) + 5')
