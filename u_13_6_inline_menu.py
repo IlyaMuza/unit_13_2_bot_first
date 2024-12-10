@@ -20,15 +20,30 @@ button1 = KeyboardButton(text='Рассчитать')
 button2 = KeyboardButton(text='Информация')
 kb.add(button1,button2)
 rm=aiogram.types.ReplyKeyboardRemove()
-
+kb_inline = aiogram.types.InlineKeyboardMarkup()
+button_il = aiogram.types.InlineKeyboardButton(text='Формулы расчёта', callback_data= 'formulas')
+button_il2 = aiogram.types.InlineKeyboardButton(text='Рассчитать норму калорий', callback_data= 'calories')
+kb_inline.add(button_il2, button_il)
 
 @dp.message_handler(commands='start')
 async def start(message):
-    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup = kb)
+    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup=kb)
+    #await message.answer('Закрываю кнопки', reply_markup=rm)
 
-@dp.message_handler(text = ['Рассчитать'])
-async def set_age(message):
-    await message.answer('Введите свой возраст:', reply_markup=rm)
+@dp.message_handler(text='Рассчитать')
+async def main_menu(message):
+    #await message.answer(reply_markup=rm)
+    await message.answer('Выберите опцию:', reply_markup = kb_inline)
+
+@dp.callback_query_handler(text='formulas')
+async def get_formulas(call):
+    await call.message.answer('10 х вес (кг) + 6,25 x рост (см) – 5 х возраст (г) + 5')
+    await call.answer()
+
+@dp.callback_query_handler(text = 'calories')
+async def set_age(call):
+    await call.message.answer('Введите свой возраст:')
+    await call.answer()
     await UserState.age.set()
 
 @dp.message_handler(state= UserState.age)
