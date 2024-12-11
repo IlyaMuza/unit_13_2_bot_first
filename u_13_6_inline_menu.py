@@ -6,7 +6,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-api = ''
+api = '7472265479:AAE3x-1wSugCwZJ8vvdQLQJsYZr5AMYB6yA'
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -28,11 +28,9 @@ kb_inline.add(button_il2, button_il)
 @dp.message_handler(commands='start')
 async def start(message):
     await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup=kb)
-    #await message.answer('Закрываю кнопки', reply_markup=rm)
 
 @dp.message_handler(text='Рассчитать')
 async def main_menu(message):
-    #await message.answer(reply_markup=rm)
     await message.answer('Выберите опцию:', reply_markup = kb_inline)
 
 @dp.callback_query_handler(text='formulas')
@@ -42,7 +40,7 @@ async def get_formulas(call):
 
 @dp.callback_query_handler(text = 'calories')
 async def set_age(call):
-    await call.message.answer('Введите свой возраст:')
+    await call.message.answer('Введите свой возраст:', reply_markup=rm)
     await call.answer()
     await UserState.age.set()
 
